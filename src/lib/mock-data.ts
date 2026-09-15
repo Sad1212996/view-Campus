@@ -1,0 +1,108 @@
+import type { Route } from "./types";
+
+export const routes: Route[] = [
+  {
+    id: "a",
+    code: "สาย A",
+    name: "ประตูใหญ่ – หอพักนักศึกษา C",
+    accent: "blue",
+    baseFare: 10,
+    perStopFare: 5,
+    departureIntervalMin: 15,
+    stops: [
+      { id: "a1", name: "ประตูใหญ่มหาวิทยาลัย", lat: 14.071, lng: 100.601 },
+      { id: "a2", name: "อาคารเรียนรวมสังคมศาสตร์", lat: 14.0725, lng: 100.6035 },
+      { id: "a3", name: "โรงอาหารกลาง", lat: 14.0738, lng: 100.6055 },
+      { id: "a4", name: "หอสมุดกลาง", lat: 14.075, lng: 100.6072 },
+      { id: "a5", name: "หอพักนักศึกษา C", lat: 14.0765, lng: 100.609 },
+    ],
+    driver: {
+      name: "สมชาย ใจดี",
+      initials: "สจ",
+      rating: 4.8,
+      totalTrips: 1204,
+      phoneMasked: "081-xxx-4521",
+      licenseIdMasked: "T-xxxxx-8827",
+      verified: true,
+      memberSince: "2565",
+    },
+    vehicle: {
+      plate: "3กษ 5567",
+      model: "Toyota Commuter",
+      color: "ขาว - ฟ้า",
+      capacity: 13,
+      verified: true,
+      lastInspection: "15 ส.ค. 2569",
+    },
+  },
+  {
+    id: "b",
+    code: "สาย B",
+    name: "ตลาดวิชา – สนามกีฬากลาง",
+    accent: "green",
+    baseFare: 15,
+    perStopFare: 5,
+    departureIntervalMin: 20,
+    stops: [
+      { id: "b1", name: "ตลาดวิชา", lat: 14.0695, lng: 100.607 },
+      { id: "b2", name: "คณะวิศวกรรมศาสตร์", lat: 14.0712, lng: 100.6095 },
+      { id: "b3", name: "ศูนย์กีฬาในร่ม", lat: 14.073, lng: 100.6115 },
+      { id: "b4", name: "สนามกีฬากลาง", lat: 14.0748, lng: 100.6135 },
+    ],
+    driver: {
+      name: "วิภาวรรณ ศรีสุข",
+      initials: "วศ",
+      rating: 4.9,
+      totalTrips: 2031,
+      phoneMasked: "089-xxx-1187",
+      licenseIdMasked: "T-xxxxx-4410",
+      verified: true,
+      memberSince: "2563",
+    },
+    vehicle: {
+      plate: "1กท 8823",
+      model: "Toyota Hiace",
+      color: "ขาว",
+      capacity: 12,
+      verified: true,
+      lastInspection: "02 ก.ย. 2569",
+    },
+  },
+  {
+    id: "c",
+    code: "สาย C",
+    name: "สถานีรถไฟฟ้า – คณะศิลปศาสตร์",
+    accent: "yellow",
+    baseFare: 10,
+    perStopFare: 4,
+    departureIntervalMin: 12,
+    stops: [
+      { id: "c1", name: "สถานีรถไฟฟ้าสายสีแดง", lat: 14.068, lng: 100.5995 },
+      { id: "c2", name: "ประตูฝั่งเหนือ", lat: 14.07, lng: 100.602 },
+      { id: "c3", name: "คณะศิลปศาสตร์", lat: 14.0722, lng: 100.6045 },
+      { id: "c4", name: "หอประชุมใหญ่", lat: 14.074, lng: 100.6065 },
+    ],
+    driver: {
+      name: "ประเสริฐ มั่นคง",
+      initials: "ปม",
+      rating: 4.7,
+      totalTrips: 876,
+      phoneMasked: "086-xxx-9902",
+      licenseIdMasked: "T-xxxxx-1073",
+      verified: true,
+      memberSince: "2567",
+    },
+    vehicle: {
+      plate: "2ขค 1190",
+      model: "Toyota Commuter",
+      color: "ขาว - เขียว",
+      capacity: 13,
+      verified: true,
+      lastInspection: "28 ก.ค. 2569",
+    },
+  },
+];
+
+export function getRoute(id: string): Route | undefined {
+  return routes.find((r) => r.id === id);
+}

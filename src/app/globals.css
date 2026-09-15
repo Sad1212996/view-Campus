@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ea;
+  --surface: #ffffff;
+  --surface-muted: #efead9;
+  --foreground: #1a1a1a;
+  --muted: #5c5c52;
+  --border: #d7d2c2;
+  --border-strong: #b7ae92;
+
+  --primary: #1b3a63;
+  --primary-strong: #0f2545;
+  --primary-tint: #e7ecf3;
+
+  --accent: #7a2331;
+  --accent-tint: #f5e6e8;
+
+  --gold: #a9812e;
+
+  --success-bg: #e7efe5;
+  --success-text: #24522e;
+  --warning-bg: #fbf1d9;
+  --warning-text: #7a5300;
+  --danger-bg: #f7e4e2;
+  --danger-text: #7c2116;
+
+  --tag-red-bg: #f5e6e8;
+  --tag-red-text: #7a2331;
+  --tag-blue-bg: #e7ecf3;
+  --tag-blue-text: #1b3a63;
+  --tag-green-bg: #e7efe5;
+  --tag-green-text: #24522e;
+  --tag-yellow-bg: #f3ecd8;
+  --tag-yellow-text: #7a5300;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-tint: var(--primary-tint);
+  --color-accent: var(--accent);
+  --color-accent-tint: var(--accent-tint);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-heading);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.65;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.letterhead-rule {
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--border-strong);
+  height: 0;
+}
+
+.leaflet-container {
+  background: var(--surface-muted);
+  font-family: var(--font-body);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fade-in-up 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(var(--index, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+}
