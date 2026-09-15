@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Sarabun, Noto_Serif_Thai } from "next/font/google";
+import { Plus_Jakarta_Sans, Prompt } from "next/font/google";
 import "./globals.css";
 
-const body = Sarabun({
-  variable: "--font-body",
-  subsets: ["thai", "latin"],
-  weight: ["400", "500", "600"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const heading = Noto_Serif_Thai({
-  variable: "--font-heading",
+const prompt = Prompt({
+  variable: "--font-prompt",
   subsets: ["thai", "latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="th"
-      className={`${body.variable} ${geistMono.variable} ${heading.variable} h-full antialiased`}
+      className={`${jakarta.variable} ${prompt.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}

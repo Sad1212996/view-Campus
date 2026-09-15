@@ -30,16 +30,20 @@ export function MapView({
       />
       <Polyline
         positions={positions}
-        pathOptions={{ color: accentHex, weight: 4, opacity: 0.75 }}
+        pathOptions={{ color: accentHex, weight: 10, opacity: 0.18 }}
+      />
+      <Polyline
+        positions={positions}
+        pathOptions={{ color: accentHex, weight: 4, opacity: 0.9 }}
       />
       {stops.map((stop, i) => (
         <CircleMarker
           key={stop.id}
           center={[stop.lat, stop.lng]}
-          radius={i === 0 || i === stops.length - 1 ? 8 : 6}
+          radius={i === 0 || i === stops.length - 1 ? 9 : 6}
           pathOptions={{
             color: "#ffffff",
-            weight: 2,
+            weight: 3,
             fillColor: accentHex,
             fillOpacity: 1,
           }}

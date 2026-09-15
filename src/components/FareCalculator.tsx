@@ -11,8 +11,8 @@ export function FareCalculator({ route }: { route: Route }) {
   const fare = calcFare(route, originId, destId);
 
   return (
-    <div className="border border-border bg-surface p-6">
-      <h3 className="flex items-center gap-2 font-serif text-lg font-semibold">
+    <div className="glass-panel p-6" style={{ borderRadius: 28 }}>
+      <h3 className="flex items-center gap-2 text-lg font-semibold">
         <CurrencyCircleDollar size={20} weight="bold" className="text-primary" />
         คำนวณค่าโดยสาร
       </h3>
@@ -23,8 +23,8 @@ export function FareCalculator({ route }: { route: Route }) {
           <select
             value={originId}
             onChange={(e) => setOriginId(e.target.value)}
-            className="mt-1 w-full border border-border-strong bg-surface-muted px-3 py-2 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            style={{ borderRadius: 2 }}
+            className="mt-1 w-full border border-transparent px-3.5 py-2.5 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            style={{ borderRadius: 14, background: "var(--glass-inset)" }}
           >
             {route.stops.map((s) => (
               <option key={s.id} value={s.id}>
@@ -38,8 +38,8 @@ export function FareCalculator({ route }: { route: Route }) {
           <select
             value={destId}
             onChange={(e) => setDestId(e.target.value)}
-            className="mt-1 w-full border border-border-strong bg-surface-muted px-3 py-2 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            style={{ borderRadius: 2 }}
+            className="mt-1 w-full border border-transparent px-3.5 py-2.5 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            style={{ borderRadius: 14, background: "var(--glass-inset)" }}
           >
             {route.stops.map((s) => (
               <option key={s.id} value={s.id}>
@@ -57,9 +57,9 @@ export function FareCalculator({ route }: { route: Route }) {
             เลือกจุดลงให้ต่างจากจุดขึ้น
           </span>
         ) : (
-          <span className="font-mono text-3xl">
+          <span className="text-3xl font-bold text-primary">
             {fare}{" "}
-            <span className="text-base font-sans text-muted">บาท</span>
+            <span className="text-base font-medium text-muted">บาท</span>
           </span>
         )}
       </div>

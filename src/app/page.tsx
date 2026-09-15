@@ -11,7 +11,7 @@ export default function HomePage() {
           <span className="text-xs font-medium uppercase tracking-[0.12em] text-primary">
             ตารางเดินรถ
           </span>
-          <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight">
+          <h1 className="mt-2 text-4xl font-extrabold tracking-tight">
             รถตู้สายไหน มาถึงตอนไหน รู้ก่อนเดิน
           </h1>
           <p className="mt-3 text-muted">

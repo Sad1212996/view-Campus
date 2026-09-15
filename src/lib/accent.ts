@@ -5,23 +5,23 @@ export const accentClasses: Record<
   { bg: string; text: string; hex: string }
 > = {
   red: {
-    bg: "bg-[var(--tag-red-bg)]",
-    text: "text-[var(--tag-red-text)]",
-    hex: "#7A2331",
+    bg: "bg-danger-tint",
+    text: "text-[var(--danger-text)]",
+    hex: "#FF3B30",
   },
   blue: {
     bg: "bg-[var(--tag-blue-bg)]",
     text: "text-[var(--tag-blue-text)]",
-    hex: "#1B3A63",
+    hex: "#0A84FF",
   },
   green: {
     bg: "bg-[var(--tag-green-bg)]",
     text: "text-[var(--tag-green-text)]",
-    hex: "#24522E",
+    hex: "#34C759",
   },
   yellow: {
     bg: "bg-[var(--tag-yellow-bg)]",
     text: "text-[var(--tag-yellow-text)]",
-    hex: "#7A5300",
+    hex: "#FF9F0A",
   },
 };

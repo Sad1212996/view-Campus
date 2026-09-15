@@ -14,6 +14,7 @@ export interface Driver {
   licenseIdMasked: string;
   verified: boolean;
   memberSince: string;
+  photoSrc?: string;
 }
 
 export interface Vehicle {

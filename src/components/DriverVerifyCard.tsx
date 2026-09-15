@@ -10,13 +10,17 @@ export function DriverVerifyCard({
   accentHex: string;
 }) {
   return (
-    <div className="border border-border bg-surface p-6">
+    <div className="glass-panel p-6" style={{ borderRadius: 28 }}>
       <div className="flex items-center gap-4">
-        <Avatar initials={driver.initials} accentHex={accentHex} />
+        <Avatar
+          initials={driver.initials}
+          accentHex={accentHex}
+          photoSrc={driver.photoSrc}
+        />
         <div>
-          <h3 className="font-serif text-lg font-semibold">{driver.name}</h3>
+          <h3 className="text-lg font-semibold">{driver.name}</h3>
           <div className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-muted">
-            <Star size={14} weight="fill" className="text-gold" />
+            <Star size={14} weight="fill" className="text-tertiary" />
             {driver.rating.toFixed(1)} · {driver.totalTrips.toLocaleString()}{" "}
             เที่ยว · สมาชิกตั้งแต่ {driver.memberSince}
           </div>
@@ -25,12 +29,8 @@ export function DriverVerifyCard({
 
       {driver.verified && (
         <span
-          className="mt-4 inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium"
-          style={{
-            backgroundColor: "var(--success-bg)",
-            color: "var(--success-text)",
-            borderRadius: 2,
-          }}
+          className="mt-4 inline-flex items-center gap-1 bg-secondary-tint px-3 py-1 text-xs font-medium"
+          style={{ color: "var(--success-text)", borderRadius: 9999 }}
         >
           <SealCheck size={14} weight="fill" />
           ยืนยันตัวตนแล้วโดยมหาวิทยาลัย
@@ -43,14 +43,14 @@ export function DriverVerifyCard({
             <Phone size={15} />
             เบอร์ติดต่อ
           </dt>
-          <dd className="font-mono">{driver.phoneMasked}</dd>
+          <dd>{driver.phoneMasked}</dd>
         </div>
         <div className="flex items-center justify-between">
           <dt className="flex items-center gap-1.5 text-muted">
             <IdentificationCard size={15} />
             เลขใบอนุญาตขับขี่
           </dt>
-          <dd className="font-mono">{driver.licenseIdMasked}</dd>
+          <dd>{driver.licenseIdMasked}</dd>
         </div>
       </dl>
     </div>

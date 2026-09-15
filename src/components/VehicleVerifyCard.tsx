@@ -9,7 +9,7 @@ export function VehicleVerifyCard({
   accentHex: string;
 }) {
   return (
-    <div className="border border-border bg-surface p-6">
+    <div className="glass-panel p-6" style={{ borderRadius: 28 }}>
       <div className="flex items-center gap-4">
         <div
           className="flex h-16 w-16 shrink-0 items-center justify-center border-2"
@@ -17,13 +17,13 @@ export function VehicleVerifyCard({
             backgroundColor: `${accentHex}14`,
             color: accentHex,
             borderColor: `${accentHex}55`,
-            borderRadius: 6,
+            borderRadius: 18,
           }}
         >
           <Van size={28} weight="bold" />
         </div>
         <div>
-          <h3 className="font-mono text-2xl tracking-wide">{vehicle.plate}</h3>
+          <h3 className="text-2xl tracking-wide">{vehicle.plate}</h3>
           <p className="mt-1 text-sm text-muted">
             {vehicle.model} · สี{vehicle.color}
           </p>
@@ -32,12 +32,8 @@ export function VehicleVerifyCard({
 
       {vehicle.verified && (
         <span
-          className="mt-4 inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium"
-          style={{
-            backgroundColor: "var(--success-bg)",
-            color: "var(--success-text)",
-            borderRadius: 2,
-          }}
+          className="mt-4 inline-flex items-center gap-1 bg-secondary-tint px-3 py-1 text-xs font-medium"
+          style={{ color: "var(--success-text)", borderRadius: 9999 }}
         >
           <SealCheck size={14} weight="fill" />
           ผ่านการตรวจสภาพรถแล้ว
@@ -50,11 +46,11 @@ export function VehicleVerifyCard({
             <Users size={15} />
             ความจุผู้โดยสาร
           </dt>
-          <dd className="font-mono">{vehicle.capacity} ที่นั่ง</dd>
+          <dd>{vehicle.capacity} ที่นั่ง</dd>
         </div>
         <div className="flex items-center justify-between">
           <dt className="text-muted">ตรวจสภาพล่าสุด</dt>
-          <dd className="font-mono">{vehicle.lastInspection}</dd>
+          <dd>{vehicle.lastInspection}</dd>
         </div>
       </dl>
     </div>

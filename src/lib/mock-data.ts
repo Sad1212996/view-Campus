@@ -58,6 +58,7 @@ export const routes: Route[] = [
       licenseIdMasked: "T-xxxxx-4410",
       verified: true,
       memberSince: "2563",
+      photoSrc: "/drivers/driver-b.png",
     },
     vehicle: {
       plate: "1กท 8823",

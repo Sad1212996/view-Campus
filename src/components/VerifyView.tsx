@@ -22,12 +22,12 @@ export function VerifyView({ route }: { route: Route }) {
 
         <div className="reveal mt-4">
           <span
-            className={`inline-block px-2 py-0.5 text-[11px] font-medium uppercase tracking-[0.06em] ${accent.bg} ${accent.text}`}
-            style={{ borderRadius: 2 }}
+            className={`inline-block px-3 py-1 text-[11px] font-medium uppercase tracking-[0.06em] ${accent.bg} ${accent.text}`}
+            style={{ borderRadius: 9999 }}
           >
             {route.code}
           </span>
-          <h1 className="mt-2 font-serif text-3xl font-semibold tracking-tight">
+          <h1 className="mt-2 text-3xl font-bold tracking-tight">
             ยืนยันตัวตนคนขับและรถก่อนขึ้น
           </h1>
           <p className="mt-2 max-w-xl text-sm text-muted">
@@ -42,11 +42,11 @@ export function VerifyView({ route }: { route: Route }) {
         </div>
 
         <div
-          className="reveal mt-6 flex items-start gap-3 border p-5 text-sm"
+          className="reveal mt-6 flex items-start gap-3 p-5 text-sm"
           style={{
             backgroundColor: "var(--warning-bg)",
             color: "var(--warning-text)",
-            borderColor: "var(--warning-text)",
+            borderRadius: 20,
           }}
         >
           <Warning size={18} weight="bold" className="mt-0.5 shrink-0" />

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#f4f3f8","surface-bright":"#faf9fe","tertiary":"#845000","surface-container-high":"#e9e7ed","on-tertiary":"#ffffff","error-container":"#ffdad6","on-error-container":"#93000a","surface-container-highest":"#e3e2e7","outline-variant":"#c0c6d6","surface-variant":"#e3e2e7","on-primary-container":"#fefcff","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#2b1700","primary-fixed-dim":"#aac7ff","background":"#faf9fe","error":"#ba1a1a","outline":"#717786","on-tertiary-container":"#fffbff","secondary-fixed":"#72fe88","on-error":"#ffffff","inverse-on-surface":"#f1f0f5","inverse-surface":"#2f3034","inverse-primary":"#aac7ff","primary-container":"#0073e0","secondary":"#006e28","on-primary-fixed-variant":"#00468d","primary":"#005ab3","tertiary-container":"#a66600","secondary-container":"#6ffb85","on-background":"#1a1b1f","tertiary-fixed-dim":"#ffb868","on-surface-variant":"#414754","surface-tint":"#005db8","on-secondary-fixed-variant":"#00531c","surface-container":"#eeedf3","on-secondary-container":"#00732a","surface-dim":"#dad9df","on-secondary":"#ffffff","on-primary-fixed":"#001b3e","primary-fixed":"#d6e3ff","surface":"#faf9fe","on-surface":"#1a1b1f","on-tertiary-fixed-variant":"#673d00","on-primary":"#ffffff","secondary-fixed-dim":"#53e16f","on-secondary-fixed":"#002107","tertiary-fixed":"#ffddbb"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2rem","space-lg":"1.5rem","gutter":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"1rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-interactive":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"metric-timer":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"body-md":["15px",{"lineHeight":"21px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-interactive":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"700"}],"metric-timer":["40px",{"lineHeight":"44px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"800"}],"display-hero":["48px",{"lineHeight":"54px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["17px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface relative min-h-full selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="fixed inset-0 pointer-events-none overflow-hidden z-0"><div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl"></div><div class="absolute top-1/3 -right-24 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl"></div><div class="absolute -bottom-20 left-1/3 w-[30rem] h-[30rem] bg-primary-fixed/25 rounded-full blur-3xl"></div></div><header class="fixed top-0 inset-x-0 z-50 px-margin pt-space-xs"><div class="h-20 max-w-7xl mx-auto px-space-lg flex items-center justify-between bg-surface-container-lowest/70 backdrop-blur-2xl rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] border border-surface-container-lowest/80"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="CampusVan Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vfg7kdDENq1qQ8SidjXRMMGrb8UMUvvtOyo1EDW0EZ_qgonOLzXqUcDgsR9DqxUeB49SKTscRfyZujKRUExt5AD5JiMrBG0WcDadvd5L_PRPSMdgeBXEZe5S3m6qB3JXpRoRfmiiTIBEinePSbV6K_pnLhopOxOKTOsCaq7CKs0joyC8b4MmpRppbMPcvZU_OyFd3rNddrjkWbrHD12SrBzMVPAY1UFfuEX3yHyN_Hfs8iIsW1yoqJVbY"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">CampusVan</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container/60 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>West Campus Hub • North Quad</div></div><nav class="hidden md:flex items-center p-1 rounded-full bg-surface-container-high/60 backdrop-blur-md" data-active-classes="bg-primary-container text-on-primary-container font-label-interactive shadow-[0_2px_10px_rgba(0,115,224,0.3)]"><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-primary-container text-on-primary-container font-label-interactive shadow-[0_2px_10px_rgba(0,115,224,0.3)]" data-path="active-routes" href="#">Active Routes</a><a class="px-space-md py-1.5 rounded-full font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="live-map-tracking" href="#">Live Map &amp; Tracking</a><a class="px-space-md py-1.5 rounded-full font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="pass-fare-wallet" href="#">Pass &amp; Fare Wallet</a><a class="px-space-md py-1.5 rounded-full font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="safety-verification" href="#">Safety &amp; Verification</a></nav><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low/80"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-body-sm text-body-sm text-on-surface-variant">All Shuttles On Schedule</span></div><a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors" data-path="emergency-dispatch" href="#"><span class="material-symbols-outlined text-headline-sm">fmd_bad</span><span class="font-label-interactive text-label-interactive hidden sm:inline">SOS Dispatch</span></a><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyu8zl65WkcTjrPBf-zq-WvKE-DJcAB7o7P3jKIJg85oZFFfLNmdyDp7GYvgFO-zNjzN-lPdwZMjOm2OPXYtAxxwcZpQ_iZzqmyzGTVG8VEhfhCZDL3VnI3JbQtBb5mhU1GeVoEMDrGrPxC77aNFcvnvbaymlXc-FGy8OzxNqPLiExZ4vHwpg4GpsO5m0toVEbJv8WDACUmGdJXY8Ijqitn5U1ykKjkzddbOdnaR6fDrtrmOfZK4jW"/><span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[9px]">verified</span></span></div></div></div></header><main class="relative z-10 w-full pt-20 max-w-7xl mx-auto px-space-lg pb-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<!-- Real-time dynamic notification chip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-2.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_0_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="flex h-2.5 w-2.5 relative flex-shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<p class="font-body-md text-body-sm text-on-surface truncate">
+<strong class="font-headline-sm text-body-sm text-primary">Express Line 4</strong>
+<span class="text-on-surface-variant ml-1">arriving in 3 mins at South Union Station</span>
+</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed text-label-caps font-label-caps uppercase tracking-wider">Zero Emissions</span>
+<span class="hidden sm:inline font-body-sm text-body-sm text-on-surface-variant font-medium">Platform B3</span>
+</div>
+</div>
+<!-- Top Metrics Telemetry Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Timer Metric -->
+<div class="relative overflow-hidden rounded-lg p-space-md bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] transition-all duration-300 hover:scale-[1.015] hover:shadow-[0_12px_40px_0_rgba(0,90,179,0.12)]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Next Shuttle Arrival</span>
+<span class="material-symbols-outlined text-primary text-headline-sm">schedule</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-metric-timer text-metric-timer text-primary font-bold tracking-tight" id="live-countdown">03:42</span>
+<span class="font-label-interactive text-body-sm text-on-surface-variant">min:sec</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Boarding Zone B • On Time</span>
+</div>
+</div>
+<!-- Available Seats Metric -->
+<div class="relative overflow-hidden rounded-lg p-space-md bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] transition-all duration-300 hover:scale-[1.015]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Live Seat Capacity</span>
+<span class="material-symbols-outlined text-secondary text-headline-sm">airline_seat_recline_normal</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-metric-timer text-metric-timer text-on-surface font-bold tracking-tight">7</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 14</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold ml-auto">50% Free</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mt-space-sm overflow-hidden">
+<div class="bg-primary h-2 rounded-full w-1/2 transition-all duration-500"></div>
+</div>
+</div>
+<!-- Fare & Pass Wallet -->
+<div class="relative overflow-hidden rounded-lg p-space-md bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] transition-all duration-300 hover:scale-[1.015]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Active Fare</span>
+<span class="material-symbols-outlined text-primary text-headline-sm">contactless</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-metric-timer text-metric-timer text-on-surface font-bold tracking-tight">$0.00</span>
+<span class="px-space-xs py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps uppercase">All-Access Pass</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student ID #8492</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">Auto-Validated</span>
+</div>
+</div>
+<!-- Fleet Telemetry -->
+<div class="relative overflow-hidden rounded-lg p-space-md bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] transition-all duration-300 hover:scale-[1.015]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Van Microclimate</span>
+<span class="material-symbols-outlined text-tertiary text-headline-sm">thermostat</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-metric-timer text-metric-timer text-on-surface font-bold tracking-tight">70°F</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Eco HVAC</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-sm">bolt</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">86% Battery • Quiet Mode</span>
+</div>
+</div>
+</div>
+<!-- Primary Workspace Bento: 3 Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- ==============================================
+         COLUMN A: Active Routes & Campus Fleet Drawer
+         ============================================== -->
+<div class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- Route Search & Filters Box -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Campus Lines</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps font-bold">4 LIVE</span>
+</div>
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-md">search</span>
+<input class="w-full pl-9 pr-3 py-2 rounded-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all" placeholder="Search line, hall, or stop..." type="text"/>
+</div>
+<!-- Filter tags -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-label-caps font-label-caps">
+<button class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-semibold transition-all">All</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">Express</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">Night Safe</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">Accessible</button>
+</div>
+</div>
+<!-- Route Cards Stack -->
+<div class="flex flex-col gap-space-sm" id="route-cards-container">
+<!-- Route 1: ACTIVE -->
+<div class="group relative rounded-lg p-space-md bg-surface-container-lowest shadow-[0_12px_32px_0_rgba(0,90,179,0.12)] cursor-pointer transition-all duration-300 scale-[1.01]">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Blue Express</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps font-bold uppercase">Selected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Science Quad → Engineering Hall</p>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-primary font-bold">
+<span class="material-symbols-outlined text-body-sm">navigation</span>
+<span>ETA 3 MIN</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">7 Seats Free</span>
+</div>
+</div>
+<!-- Route 2 -->
+<div class="group relative rounded-lg p-space-md bg-surface-container-lowest/70 backdrop-blur-xl shadow-sm hover:bg-surface-container-lowest transition-all duration-200 cursor-pointer">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Night Owl SafeVan</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">9 min</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">North Quad Dorms → Graduate Center</p>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">EVERY 15 MIN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11 Seats Free</span>
+</div>
+</div>
+<!-- Route 3 -->
+<div class="group relative rounded-lg p-space-md bg-surface-container-lowest/70 backdrop-blur-xl shadow-sm hover:bg-surface-container-lowest transition-all duration-200 cursor-pointer">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Health Sciences</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14 min</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Medical Hospital → East Annex</p>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">EVERY 12 MIN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 Seats Free</span>
+</div>
+</div>
+<!-- Route 4 -->
+<div class="group relative rounded-lg p-space-md bg-surface-container-lowest/70 backdrop-blur-xl shadow-sm hover:bg-surface-container-lowest transition-all duration-200 cursor-pointer">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Athletics Shuttler</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">18 min</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Campus Stadium → West Pavilion</p>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">EVERY 20 MIN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">9 Seats Free</span>
+</div>
+</div>
+</div>
+<!-- Blue Light Transit Security Callout -->
+<div class="p-space-md rounded-lg bg-surface-container-low/90 backdrop-blur-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-md">verified_user</span>
+<div>
+<p class="font-headline-sm text-body-sm text-on-surface font-bold">Safety Escort Mode</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Campus Police Monitored</p>
+</div>
+</div>
+<button class="px-space-sm py-1.5 rounded-full bg-surface-container-lowest font-label-caps text-label-caps uppercase font-bold text-primary shadow-sm hover:bg-surface-container-high transition-colors">
+          Info
+        </button>
+</div>
+</div>
+<!-- ==============================================
+         COLUMN B: Interactive Route Map & Spatial HUD
+         ============================================== -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Vector Map Container -->
+<div class="relative w-full h-[460px] rounded-lg bg-surface-container-high overflow-hidden shadow-[0_16px_40px_0_rgba(0,0,0,0.06)] select-none">
+<!-- Campus Map Canvas Graphics (Inline Vector Map with Streets, Quads, Paths) -->
+<svg class="absolute inset-0 w-full h-full object-cover" fill="none" viewbox="0 0 700 600" xmlns="http://www.w3.org/2000/svg">
+<!-- Background land tiles -->
+<rect fill="#EAE8F0" height="600" width="700"></rect>
+<!-- Campus Quads / Green Belts -->
+<path d="M 60 40 Q 140 30 200 80 T 260 180 T 120 220 Z" fill="#D4EED8" opacity="0.85"></path>
+<path d="M 380 90 Q 520 70 600 120 T 580 260 T 360 220 Z" fill="#D4EED8" opacity="0.85"></path>
+<path d="M 120 380 Q 240 340 310 420 T 260 540 T 80 500 Z" fill="#D4EED8" opacity="0.85"></path>
+<path d="M 440 390 Q 600 370 640 450 T 560 580 T 400 520 Z" fill="#D4EED8" opacity="0.85"></path>
+<!-- Campus Quad Labels -->
+<text fill="#00531c" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" opacity="0.6" x="140" y="120">NORTH MEMORIAL QUAD</text>
+<text fill="#00531c" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" opacity="0.6" x="440" y="150">SCIENCE COMMONS</text>
+<text fill="#00531c" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" opacity="0.6" x="160" y="460">STUDENT LIFE VILLAGE</text>
+<text fill="#00531c" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" opacity="0.6" x="480" y="470">ENGINEERING PARK</text>
+<!-- Campus Buildings -->
+<rect fill="#FFFFFF" height="35" opacity="0.9" rx="6" width="55" x="110" y="70"></rect>
+<text fill="#414754" font-family="Plus Jakarta Sans" font-size="9" font-weight="600" x="116" y="92">Hall A</text>
+<rect fill="#FFFFFF" height="42" opacity="0.9" rx="6" width="80" x="430" y="80"></rect>
+<text fill="#414754" font-family="Plus Jakarta Sans" font-size="9" font-weight="600" x="442" y="105">Main Library</text>
+<rect fill="#FFFFFF" height="55" opacity="0.9" rx="8" width="100" x="220" y="270"></rect>
+<text fill="#005ab3" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" x="235" y="302">Student Union Hub</text>
+<rect fill="#FFFFFF" height="45" opacity="0.9" rx="6" width="90" x="470" y="410"></rect>
+<text fill="#414754" font-family="Plus Jakarta Sans" font-size="9" font-weight="600" x="482" y="437">Bio-Tech Labs</text>
+<!-- Secondary Arteries -->
+<path d="M 30 140 L 670 140" stroke="#FAF9FE" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 40 320 L 660 320" stroke="#FAF9FE" stroke-linecap="round" stroke-width="12"></path>
+<path d="M 40 480 L 660 480" stroke="#FAF9FE" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 180 20 L 180 580" stroke="#FAF9FE" stroke-linecap="round" stroke-width="10"></path>
+<path d="M 370 20 L 370 580" stroke="#FAF9FE" stroke-linecap="round" stroke-width="12"></path>
+<path d="M 540 20 L 540 580" stroke="#FAF9FE" stroke-linecap="round" stroke-width="8"></path>
+<!-- ACTIVE EXPRESS LINE POLYLINE (Glowing Apple Neon Blue) -->
+<path d="M 180 140 C 260 140, 370 200, 370 320 C 370 410, 460 480, 540 480" fill="none" id="active-route-path" stroke="#0073e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+<!-- Animated neon path dash overlay -->
+<path d="M 180 140 C 260 140, 370 200, 370 320 C 370 410, 460 480, 540 480" fill="none" opacity="0.8" stroke="#d6e3ff" stroke-dasharray="10 14" stroke-linecap="round" stroke-width="3">
+<animate attributename="stroke-dashoffset" dur="3s" from="100" repeatcount="indefinite" to="0"></animate>
+</path>
+<!-- Waypoint: Stop 1 (Departed) -->
+<circle cx="180" cy="140" fill="#FFFFFF" r="8"></circle>
+<circle cx="180" cy="140" fill="#006e28" r="5"></circle>
+<text fill="#1a1b1f" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" x="150" y="170">Central Library</text>
+<!-- Waypoint: Stop 2 (Next Target) -->
+<circle cx="370" cy="320" fill="#FFFFFF" r="9"></circle>
+<circle cx="370" cy="320" fill="#005ab3" r="6"></circle>
+<text fill="#005ab3" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" x="385" y="325">Student Union B2</text>
+<!-- Waypoint: Stop 3 (Final Terminus) -->
+<circle cx="540" cy="480" fill="#FFFFFF" r="8"></circle>
+<circle cx="540" cy="480" fill="#717786" r="5"></circle>
+<text fill="#414754" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" x="470" y="510">Bio-Tech Annex</text>
+<!-- LIVE SHUTTLE PIN with Radar Emission (Coordinates mid-transit) -->
+<g transform="translate(325, 275)">
+<!-- Outer radar pulse rings -->
+<circle cx="0" cy="0" fill="#0073e0" opacity="0.15" r="28">
+<animate attributename="r" dur="2s" repeatcount="indefinite" values="16;38;48"></animate>
+<animate attributename="opacity" dur="2s" repeatcount="indefinite" values="0.4;0.1;0"></animate>
+</circle>
+<circle cx="0" cy="0" fill="#0073e0" opacity="0.3" r="18">
+<animate attributename="r" dur="2s" repeatcount="indefinite" values="10;26"></animate>
+<animate attributename="opacity" dur="2s" repeatcount="indefinite" values="0.6;0"></animate>
+</circle>
+<!-- Van Disc -->
+<circle cx="0" cy="0" fill="#005ab3" r="13" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<!-- Directional Van Icon -->
+<path d="M -4 -2 L 0 -7 L 4 -2 L 2 -2 L 2 5 L -2 5 L -2 -2 Z" fill="#FFFFFF" transform="rotate(40)"></path>
+</g>
+</svg>
+<!-- Floating Glass Top Navigation Pills on Map -->
+<div class="absolute top-space-md inset-x-space-md flex items-center justify-between pointer-events-none">
+<div class="pointer-events-auto flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">CampusVan #704</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• On Route</span>
+</div>
+<div class="pointer-events-auto flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-xl p-1 rounded-full shadow-md">
+<button class="px-space-sm py-1 rounded-full bg-surface-container font-label-caps text-label-caps text-on-surface font-semibold" title="2D Orthographic View">2D</button>
+<button class="px-space-sm py-1 rounded-full font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface" title="Center on Shuttle">
+<span class="material-symbols-outlined text-body-md align-middle">my_location</span>
+</button>
+<button class="px-space-sm py-1 rounded-full font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface" title="Map Layers">
+<span class="material-symbols-outlined text-body-md align-middle">layers</span>
+</button>
+</div>
+</div>
+<!-- Floating Live Telemetry HUD Bar (Apple Cupertino Glass HUD) -->
+<div class="absolute bottom-space-md inset-x-space-md pointer-events-none">
+<div class="pointer-events-auto p-space-sm sm:px-space-md sm:py-2.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_12px_32px_0_rgba(0,0,0,0.08)] flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-body-md">speed</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Live Speed</span>
+<p class="font-headline-sm text-body-sm text-on-surface font-bold">24 MPH</p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-body-md">traffic</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Corridor Signal</span>
+<p class="font-headline-sm text-body-sm text-secondary font-bold">Green Wave Sync</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-body-md">near_me</span>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Next Milestone</span>
+<p class="font-headline-sm text-body-sm text-primary font-bold">Student Union</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stop Progression Stepper / Timetable -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Active Route Stops</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Est. 12 mins full circuit</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs pt-1">
+<!-- Stop 1 -->
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-label-caps font-bold">
+<span class="material-symbols-outlined text-[13px]">done</span>
+</span>
+<div class="min-w-0">
+<p class="font-headline-sm text-body-sm text-on-surface font-semibold truncate">Central Library</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Departed 10:14 AM</p>
+</div>
+</div>
+<div class="flex-1 h-0.5 bg-primary rounded-full mx-space-xs"></div>
+<!-- Stop 2 -->
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-caps font-bold animate-pulse">
+              2
+            </span>
+<div class="min-w-0">
+<p class="font-headline-sm text-body-sm text-primary font-bold truncate">Student Union</p>
+<p class="font-body-sm text-[11px] text-primary font-semibold">Arriving in 3 min</p>
+</div>
+</div>
+<div class="flex-1 h-0.5 bg-surface-container-highest rounded-full mx-space-xs"></div>
+<!-- Stop 3 -->
+<div class="flex items-center gap-space-xs opacity-60">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-label-caps font-bold">
+              3
+            </span>
+<div class="min-w-0">
+<p class="font-headline-sm text-body-sm text-on-surface font-semibold truncate">Bio-Tech Annex</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">ETA 10:24 AM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==============================================
+         COLUMN C: Driver ID & Tactile Seat Selector
+         ============================================== -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Driver & Vehicle Verification Glass Card -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Assigned Vehicle &amp; Pilot</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[11px]">verified</span>
+            VERIFIED
+          </span>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="relative flex-shrink-0">
+<img alt="Sarah Jenkins Student Driver" class="w-14 h-14 rounded-2xl object-cover shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyu8zl65WkcTjrPBf-zq-WvKE-DJcAB7o7P3jKIJg85oZFFfLNmdyDp7GYvgFO-zNjzN-lPdwZMjOm2OPXYtAxxwcZpQ_iZzqmyzGTVG8VEhfhCZDL3VnI3JbQtBb5mhU1GeVoEMDrGrPxC77aNFcvnvbaymlXc-FGy8OzxNqPLiExZ4vHwpg4GpsO5m0toVEbJv8WDACUmGdJXY8Ijqitn5U1ykKjkzddbOdnaR6fDrtrmOfZK4jW"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[11px]">shield_person</span>
+</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sarah Jenkins</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Student Driver • ID #8492</p>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="font-label-interactive text-body-sm text-on-surface font-bold">4.98</span>
+<span class="text-tertiary-container font-bold text-body-sm">★★★★★</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">(1,420 trips)</span>
+</div>
+</div>
+</div>
+<!-- Vehicle specs sub-bar -->
+<div class="p-space-sm rounded-md bg-surface-container-low flex items-center justify-between text-body-sm">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Vehicle</span>
+<strong class="font-headline-sm text-body-sm text-on-surface">Mercedes e-Sprinter</strong>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Plate</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-mono font-bold text-body-sm">CAMPUS-704</span>
+</div>
+</div>
+<!-- Quick contact & safety action pills -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="py-2 px-space-sm rounded-full bg-surface-container text-on-surface font-label-interactive text-body-sm flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-body-md">share_location</span>
+            Share ETA
+          </button>
+<button class="py-2 px-space-sm rounded-full bg-surface-container text-on-surface font-label-interactive text-body-sm flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-body-md text-primary">chat</span>
+            Message Van
+          </button>
+</div>
+</div>
+<!-- Tactile Spring Seat Booking Grid -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Select Seat</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Tap to pick your reserved spot</p>
+</div>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Instant Reserve</span>
+</div>
+<!-- Van Cabin Spatial Layout (Orthographic top-down) -->
+<div class="relative w-full p-space-md rounded-2xl bg-surface-container-low flex flex-col items-center">
+<!-- Front Van Windshield Curve -->
+<div class="w-3/4 h-2 rounded-t-full bg-surface-container-highest mb-space-sm"></div>
+<!-- Front Row: Driver cab + Empty front passenger -->
+<div class="w-full max-w-[280px] grid grid-cols-4 gap-space-sm items-center mb-space-sm">
+<!-- Driver Seat (locked) -->
+<div class="h-10 rounded-xl bg-surface-container-highest flex flex-col items-center justify-center text-on-surface-variant" title="Driver Cabin">
+<span class="material-symbols-outlined text-body-md">drive_eta</span>
+<span class="text-[9px] font-label-caps uppercase">Sarah</span>
+</div>
+<!-- Empty aisle area -->
+<div class="col-span-2 flex items-center justify-center">
+<span class="text-[10px] uppercase font-label-caps text-on-surface-variant tracking-wider">Aisle</span>
+</div>
+<!-- Entry Door indicator -->
+<div class="h-10 rounded-xl border border-dashed border-outline-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-body-sm">sensor_door</span>
+</div>
+</div>
+<!-- Passenger Row 1 -->
+<div class="w-full max-w-[280px] grid grid-cols-4 gap-space-sm mb-space-xs">
+<!-- Seat 1A: Taken -->
+<button class="h-11 rounded-xl bg-surface-container-highest text-on-surface-variant flex flex-col items-center justify-center cursor-not-allowed opacity-60" disabled="" title="1A (Occupied)">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="text-[10px] font-bold">1A</span>
+</button>
+<!-- Seat 1B: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="1B">
+<span class="text-[10px] font-bold">1B</span>
+</button>
+<div class="w-full"></div>
+<!-- Seat 1C: Taken -->
+<button class="h-11 rounded-xl bg-surface-container-highest text-on-surface-variant flex flex-col items-center justify-center cursor-not-allowed opacity-60" disabled="" title="1C (Occupied)">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="text-[10px] font-bold">1C</span>
+</button>
+</div>
+<!-- Passenger Row 2 -->
+<div class="w-full max-w-[280px] grid grid-cols-4 gap-space-sm mb-space-xs">
+<!-- Seat 2A: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="2A">
+<span class="text-[10px] font-bold">2A</span>
+</button>
+<!-- Seat 2B: Taken -->
+<button class="h-11 rounded-xl bg-surface-container-highest text-on-surface-variant flex flex-col items-center justify-center cursor-not-allowed opacity-60" disabled="" title="2B (Occupied)">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="text-[10px] font-bold">2B</span>
+</button>
+<div class="w-full"></div>
+<!-- Seat 2C: Accessible Available -->
+<button class="seat-pill h-11 rounded-xl bg-secondary-fixed/40 text-on-secondary-fixed shadow-sm hover:scale-105 active:scale-95 flex flex-col items-center justify-center transition-transform" data-seat="2C" title="Accessible Seat">
+<span class="material-symbols-outlined text-[13px] text-secondary">accessible</span>
+<span class="text-[10px] font-bold">2C</span>
+</button>
+</div>
+<!-- Passenger Row 3 -->
+<div class="w-full max-w-[280px] grid grid-cols-4 gap-space-sm mb-space-xs">
+<!-- Seat 3A: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="3A">
+<span class="text-[10px] font-bold">3A</span>
+</button>
+<!-- Seat 3B: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="3B">
+<span class="text-[10px] font-bold">3B</span>
+</button>
+<div class="w-full"></div>
+<!-- Seat 3C: Taken -->
+<button class="h-11 rounded-xl bg-surface-container-highest text-on-surface-variant flex flex-col items-center justify-center cursor-not-allowed opacity-60" disabled="" title="3C (Occupied)">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="text-[10px] font-bold">3C</span>
+</button>
+</div>
+<!-- Passenger Back Row (4 seats across) -->
+<div class="w-full max-w-[280px] grid grid-cols-4 gap-space-sm">
+<!-- Seat 4A: PRESELECTED ACTIVE -->
+<button class="seat-pill h-11 rounded-xl bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(0,115,224,0.4)] scale-105 flex flex-col items-center justify-center transition-all" data-seat="4A" id="selected-seat-btn">
+<span class="material-symbols-outlined text-[13px]">check</span>
+<span class="text-[10px] font-bold">4A</span>
+</button>
+<!-- Seat 4B: Taken -->
+<button class="h-11 rounded-xl bg-surface-container-highest text-on-surface-variant flex flex-col items-center justify-center cursor-not-allowed opacity-60" disabled="">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="text-[10px] font-bold">4B</span>
+</button>
+<!-- Seat 4C: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="4C">
+<span class="text-[10px] font-bold">4C</span>
+</button>
+<!-- Seat 4D: Available -->
+<button class="seat-pill h-11 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 active:scale-95 text-on-surface flex flex-col items-center justify-center transition-transform" data-seat="4D">
+<span class="text-[10px] font-bold">4D</span>
+</button>
+</div>
+</div>
+<!-- Seat Color Matrix Legend -->
+<div class="flex items-center justify-center gap-space-md py-1 text-label-caps font-label-caps text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span>Selected</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-lowest shadow-sm"></span>
+<span>Open</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-highest"></span>
+<span>Occupied</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-fixed"></span>
+<span>Accessible</span>
+</div>
+</div>
+<!-- One-Tap Reservation Apple CTA Button -->
+<button class="w-full py-3.5 px-space-md rounded-full bg-primary-container text-on-primary-container font-label-interactive text-label-interactive flex items-center justify-center gap-space-sm shadow-[0_8px_24px_rgba(0,115,224,0.35)] hover:scale-[1.01] active:scale-[0.98] transition-all" id="book-cta">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span id="cta-label">Confirm Seat 4A • Quick Boarding</span>
+</button>
+<p class="text-center font-body-sm text-[11px] text-on-surface-variant">
+          Free with University Pass. QR Pass adds to Apple Wallet automatically.
+        </p>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script for Interactive Seat Selection & Countdown Timer -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Live Countdown Timer Simulation
+      let totalSeconds = 222; // 03:42
+      const timerElement = document.getElementById('live-countdown');
+      
+      if (timerElement) {
+        setInterval(() => {
+          if (totalSeconds > 0) {
+            totalSeconds--;
+            const mins = Math.floor(totalSeconds / 60);
+            const secs = totalSeconds % 60;
+            timerElement.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+          } else {
+            timerElement.textContent = "BOARDING";
+          }
+        }, 1000);
+      }
+
+      // 2. Interactive Seat Selection
+      const seatButtons = document.querySelectorAll('.seat-pill');
+      const ctaLabel = document.getElementById('cta-label');
+
+      seatButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const seatId = btn.getAttribute('data-seat');
+          
+          // Deselect previous
+          seatButtons.forEach(s => {
+            s.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_rgba(0,115,224,0.4)]', 'scale-105');
+            s.classList.add('bg-surface-container-lowest', 'text-on-surface');
+            const icon = s.querySelector('.material-symbols-outlined');
+            if (icon && icon.textContent === 'check') {
+              icon.remove();
+            }
+          });
+
+          // Select new
+          btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+          btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_rgba(0,115,224,0.4)]', 'scale-105');
+          
+          // Prepend checkmark icon if not present
+          if (!btn.querySelector('.material-symbols-outlined')) {
+            const check = document.createElement('span');
+            check.className = 'material-symbols-outlined text-[13px]';
+            check.textContent = 'check';
+            btn.prepend(check);
+          }
+
+          if (ctaLabel) {
+            ctaLabel.textContent = `Confirm Seat ${seatId} • Quick Boarding`;
+          }
+        });
+      });
+
+      // 3. Simple Booking Feedback
+      const bookBtn = document.getElementById('book-cta');
+      if (bookBtn) {
+        bookBtn.addEventListener('click', () => {
+          const originalText = ctaLabel.textContent;
+          bookBtn.classList.remove('bg-primary-container');
+          bookBtn.classList.add('bg-secondary');
+          ctaLabel.textContent = "Seat Confirmed! Added to Wallet ✓";
+          setTimeout(() => {
+            bookBtn.classList.remove('bg-secondary');
+            bookBtn.classList.add('bg-primary-container');
+            ctaLabel.textContent = originalText;
+          }, 3500);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-low/70 backdrop-blur-xl mt-space-xl py-space-lg"><div class="max-w-7xl mx-auto px-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 CampusVan Transit Systems. Secured by Campus Public Safety Division.</div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="safety-verification" href="#">Transit Security Desk</a><a class="hover:text-on-surface transition-colors" data-path="emergency-dispatch" href="#">24/7 Blue Light Dispatch</a></div></div></footer></body></html>
