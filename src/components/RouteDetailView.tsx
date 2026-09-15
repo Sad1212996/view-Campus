@@ -83,7 +83,7 @@ export function RouteDetailView({ route }: { route: Route }) {
               {countdownLabel}
             </div>
             <p className="mt-1 text-xs text-muted">
-              ทุก {route.departureIntervalMin} นาที
+              นาที:วินาที · ออกรถทุก {route.departureIntervalMin} นาที
             </p>
           </div>
           <div className="glass-panel p-6" style={{ borderRadius: 24 }}>
@@ -103,10 +103,15 @@ export function RouteDetailView({ route }: { route: Route }) {
         <div className="reveal mt-4 glass-panel p-6" style={{ borderRadius: 28 }}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 className="text-lg font-semibold">ผังที่นั่งภายในรถ</h2>
-            <span className="text-sm text-muted">
-              ว่าง <span className="text-foreground">{available}</span> ·
-              {" "}เต็ม <span className="text-foreground">{onboard}</span> /
-              {" "}{route.vehicle.capacity}
+            <span className="flex items-center gap-3 text-sm text-muted">
+              <span>
+                ว่าง <span className="font-semibold text-foreground">{available}</span> ที่
+              </span>
+              <span>
+                นั่งแล้ว{" "}
+                <span className="font-semibold text-foreground">{onboard}</span>
+                /{route.vehicle.capacity}
+              </span>
             </span>
           </div>
           <p className="mt-1 text-xs text-muted">แตะเพื่อเลือกและจองที่นั่งของคุณ</p>

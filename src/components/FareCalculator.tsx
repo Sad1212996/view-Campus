@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CurrencyCircleDollar } from "@phosphor-icons/react";
+import { CurrencyCircleDollar, Money } from "@phosphor-icons/react";
 import type { Route } from "@/lib/types";
 import { calcFare } from "@/lib/fare";
 
@@ -50,16 +50,19 @@ export function FareCalculator({ route }: { route: Route }) {
         </label>
       </div>
 
-      <div className="mt-5 flex items-baseline justify-between border-t border-border pt-4">
+      <div className="mt-5 flex items-center justify-between border-t border-border pt-4">
         <span className="text-sm text-muted">ค่าโดยสารรวม</span>
         {originId === destId ? (
           <span className="text-sm text-muted">
             เลือกจุดลงให้ต่างจากจุดขึ้น
           </span>
         ) : (
-          <span className="text-3xl font-bold text-primary">
-            {fare}{" "}
-            <span className="text-base font-medium text-muted">บาท</span>
+          <span
+            className="inline-flex items-center gap-1 bg-secondary-tint px-3 py-1 text-sm font-bold"
+            style={{ borderRadius: 9999, color: "var(--success-text)" }}
+          >
+            <Money size={14} weight="bold" />
+            {fare} บาท
           </span>
         )}
       </div>

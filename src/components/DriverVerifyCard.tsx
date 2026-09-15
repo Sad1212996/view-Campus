@@ -1,4 +1,11 @@
-import { Star, Phone, IdentificationCard, SealCheck } from "@phosphor-icons/react/dist/ssr";
+import {
+  Star,
+  Phone,
+  IdentificationCard,
+  SealCheck,
+  ArrowsClockwise,
+  CalendarBlank,
+} from "@phosphor-icons/react/dist/ssr";
 import type { Driver } from "@/lib/types";
 import { Avatar } from "./Avatar";
 
@@ -19,10 +26,12 @@ export function DriverVerifyCard({
         />
         <div>
           <h3 className="text-lg font-semibold">{driver.name}</h3>
-          <div className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-muted">
+          <div className="mt-1 flex items-center gap-1 text-sm text-muted">
             <Star size={14} weight="fill" className="text-tertiary" />
-            {driver.rating.toFixed(1)} · {driver.totalTrips.toLocaleString()}{" "}
-            เที่ยว · สมาชิกตั้งแต่ {driver.memberSince}
+            <span className="font-semibold text-foreground">
+              {driver.rating.toFixed(1)}
+            </span>
+            <span>คะแนนความพึงพอใจ</span>
           </div>
         </div>
       </div>
@@ -38,6 +47,20 @@ export function DriverVerifyCard({
       )}
 
       <dl className="mt-5 space-y-2.5 border-t border-border pt-4 text-sm">
+        <div className="flex items-center justify-between">
+          <dt className="flex items-center gap-1.5 text-muted">
+            <ArrowsClockwise size={15} />
+            จำนวนเที่ยวที่ขับ
+          </dt>
+          <dd>{driver.totalTrips.toLocaleString()} เที่ยว</dd>
+        </div>
+        <div className="flex items-center justify-between">
+          <dt className="flex items-center gap-1.5 text-muted">
+            <CalendarBlank size={15} />
+            เป็นสมาชิกตั้งแต่
+          </dt>
+          <dd>ปี {driver.memberSince}</dd>
+        </div>
         <div className="flex items-center justify-between">
           <dt className="flex items-center gap-1.5 text-muted">
             <Phone size={15} />
