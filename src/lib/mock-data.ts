@@ -25,6 +25,7 @@ export const routes: Route[] = [
       licenseIdMasked: "T-xxxxx-8827",
       verified: true,
       memberSince: "2565",
+      photoSrc: "/drivers/driver-a.jpg",
     },
     vehicle: {
       plate: "3กษ 5567",
@@ -92,6 +93,7 @@ export const routes: Route[] = [
       licenseIdMasked: "T-xxxxx-1073",
       verified: true,
       memberSince: "2567",
+      photoSrc: "/drivers/driver-c.jpg",
     },
     vehicle: {
       plate: "2ขค 1190",

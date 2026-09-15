@@ -44,8 +44,8 @@ function SeatBlock({
       whileTap={interactive && state !== "occupied" ? { scale: 0.88 } : undefined}
       animate={
         state === "selected"
-          ? { boxShadow: ["0 0 0 rgba(10,132,255,0.5)", "0 0 14px rgba(10,132,255,0.55)", "0 0 0 rgba(10,132,255,0.5)"] }
-          : { boxShadow: "0 0 0 rgba(10,132,255,0)" }
+          ? { boxShadow: ["0 0 0 rgba(249,115,22,0.5)", "0 0 14px rgba(249,115,22,0.55)", "0 0 0 rgba(249,115,22,0.5)"] }
+          : { boxShadow: "0 0 0 rgba(249,115,22,0)" }
       }
       transition={
         state === "selected"
@@ -135,8 +135,15 @@ export function SeatMap({
         {showDriver && (
           <div className="mb-1 flex items-center" style={{ gap }}>
             <div
-              className="flex items-center justify-center border-2 border-danger bg-danger-tint text-danger"
-              style={{ width: seat, height: seat, borderRadius: size === "lg" ? 10 : 4 }}
+              className="flex items-center justify-center border-2"
+              style={{
+                width: seat,
+                height: seat,
+                borderRadius: size === "lg" ? 10 : 4,
+                borderColor: "var(--border-strong)",
+                background: "var(--surface-muted)",
+                color: "var(--muted)",
+              }}
               title="คนขับ"
             >
               <SteeringWheel size={Math.round(seat * 0.55)} weight="bold" />

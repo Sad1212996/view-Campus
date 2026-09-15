@@ -12,7 +12,7 @@ export const accentClasses: Record<
   blue: {
     bg: "bg-[var(--tag-blue-bg)]",
     text: "text-[var(--tag-blue-text)]",
-    hex: "#0A84FF",
+    hex: "#F97316",
   },
   green: {
     bg: "bg-[var(--tag-green-bg)]",
@@ -22,6 +22,6 @@ export const accentClasses: Record<
   yellow: {
     bg: "bg-[var(--tag-yellow-bg)]",
     text: "text-[var(--tag-yellow-text)]",
-    hex: "#FF9F0A",
+    hex: "#FBBF24",
   },
 };
